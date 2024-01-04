@@ -51,13 +51,14 @@ class AppRoutes {
         homePageScreen: HomePageScreen.builder,
         profilePageScreen: ProfilePageScreen.builder,
         scanPageScreen: ScanPageScreen.builder,
-        scanIngredientsPageScreen: ScanIngredientsPageScreen.builder,
+        scanIngredientsPageScreen: (context) => ScanIngredientsPageScreen(),
+        // scanIngredientsPageScreen: ScanIngredientsPageScreen.builder,
         scanIngPageScreen: ScanIngPageScreen.builder,
         exportPageScreen: ExportPageScreen.builder,
         historyPageScreen: HistoryPageScreen.builder,
-        scanIngredientsResultPageScreen:
-            ScanIngredientsResultPageScreen.builder,
-        scanIngResultScreen: ScanIngResultScreen.builder,
+        // scanIngredientsResultPageScreen:
+        //     ScanIngredientsResultPageScreen.builder,
+        // scanIngResultScreen: ScanIngResultScreen.builder,
         appNavigationScreen: AppNavigationScreen.builder,
         initialRoute: SplashScreen.builder
       };

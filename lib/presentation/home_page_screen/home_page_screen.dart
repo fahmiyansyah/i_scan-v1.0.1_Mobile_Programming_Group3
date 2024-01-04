@@ -30,20 +30,22 @@ class HomePageScreenState extends State<HomePageScreen> {
     return SafeArea(
         child: Scaffold(
             backgroundColor: theme.colorScheme.onError,
-            body: SizedBox(
-                width: double.maxFinite,
-                child: Column(children: [
-                  _buildGreetLabel(context),
-                  Container(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 20.h, vertical: 29.v),
-                      child: Column(children: [
-                        SizedBox(height: 5.v),
-                        _buildSeventySeven(context),
-                        SizedBox(height: 36.v),
-                        _buildNews(context)
-                      ]))
-                ]))));
+            body: SingleChildScrollView(
+              child: SizedBox(
+                  width: double.maxFinite,
+                  child: Column(children: [
+                    _buildGreetLabel(context),
+                    Container(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 20.h, vertical: 29.v),
+                        child: Column(children: [
+                          SizedBox(height: 5.v),
+                          _buildSeventySeven(context),
+                          SizedBox(height: 36.v),
+                          _buildNews(context)
+                        ]))
+                  ])),
+            )));
   }
 
   /// Section Widget

@@ -38,7 +38,7 @@ final Map<String, String> enUs = {
   "msg_quickly_detect_the":
       "Quickly detect the ingredients \nand nutritional information of \nthe products you consume.",
   "msg_there_is_msg_which":
-      "There is MSG, which is often the center of controversy, with its effect that can elevate the taste of the dish to the peak of deliciousness.",
+      "There is MSG, which is often the center of controversy,",
 
   // Scan Page Screen
   "msg_informasi_nilai":
